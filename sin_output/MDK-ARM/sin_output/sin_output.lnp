@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"sin_output\startup_stm32f103xe.o"
+"sin_output\main.o"
+"sin_output\stm32f1xx_it.o"
+"sin_output\stm32f1xx_hal_msp.o"
+"sin_output\stm32f1xx_hal_gpio_ex.o"
+"sin_output\stm32f1xx_hal_dac.o"
+"sin_output\stm32f1xx_hal_dac_ex.o"
+"sin_output\stm32f1xx_hal.o"
+"sin_output\stm32f1xx_hal_rcc.o"
+"sin_output\stm32f1xx_hal_rcc_ex.o"
+"sin_output\stm32f1xx_hal_gpio.o"
+"sin_output\stm32f1xx_hal_dma.o"
+"sin_output\stm32f1xx_hal_cortex.o"
+"sin_output\stm32f1xx_hal_pwr.o"
+"sin_output\stm32f1xx_hal_flash.o"
+"sin_output\stm32f1xx_hal_flash_ex.o"
+"sin_output\stm32f1xx_hal_exti.o"
+"sin_output\stm32f1xx_hal_tim.o"
+"sin_output\stm32f1xx_hal_tim_ex.o"
+"sin_output\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "sin_output\sin_output.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "sin_output.map" -o sin_output\sin_output.axf
